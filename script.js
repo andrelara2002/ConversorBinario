@@ -1,13 +1,15 @@
 const buttonElement = document.getElementById("buttonClear");
-const inputElement = document.getElementById("inputValue");
+const inputElement = document.getElementById("inputElement");
 const labelElement = document.getElementById("resultLabel");
 
-executeConversion = () => {
-  let value = inputElement.value;
-  value = value.toString();
-  console.log(value);
+inputElement.addEventListener('input', event => {
 
-  if (value.includes("1") || value.includes("0")) {
+  let value = inputElement.value
+  value = value.toString();
+
+  if (value.includes("2") || value.includes("3") || value.includes('4') || value.includes('5')  || value.includes('6')  || value.includes('7')  || value.includes('8')  || value.includes('9')) {
+    labelElement.innerHTML = "Precisa ser Binário";
+  } else {
     try {
       value = parseInt(value, 2);
       if (isNaN(value)) {
@@ -18,7 +20,11 @@ executeConversion = () => {
     } catch {
       alert("Infelizmente não foi possível converter");
     }
-  } else {
-    labelElement.innerHTML = "Precisa ser Binário";
   }
-};
+})
+
+clearWorkspace = () => {
+  labelElement.innerHTML = 'Digite um binário'
+  inputElement.value = ''
+  inputElement.focus = '';
+}

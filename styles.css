@@ -12,3 +12,39 @@ html {
   box-shadow: 0 0 15px 0 lightgray;
   border-radius: 1rem;
 }
+
+input{
+  padding: .4rem;
+  border: 2px solid lightgrey;
+  font: 300 1.2rem sans-serif;
+  border-radius: .4rem;
+}
+
+input:focus{
+  outline: none;
+  border-color: lightgreen;
+}
+
+button{
+  padding: .4rem .6rem;
+  border: 2px solid lightgreen;
+  color: lightgreen;
+
+  font: 700 1.2rem sans-serif;
+  background: none;
+  border-radius: .4rem;
+  transition: 500ms;
+}
+
+button:hover{
+  cursor: pointer;
+  background: lightgreen;
+  color: white;
+  transition: 500ms;
+}
+
+button:focus{
+  transform: rotate(360deg);
+  transition: 500ms;
+  outline: none;
+}
