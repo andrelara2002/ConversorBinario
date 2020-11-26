@@ -1,3 +1,1 @@
-# web-platform-isqhym
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-isqhym)
+Conversor de Binário em decimal gravado em Javascript, CSS e Html
