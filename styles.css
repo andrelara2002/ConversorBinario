@@ -1,3 +1,14 @@
-body {
-  background: orange;
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font: 700 1rem sans-serif;
+}
+
+.main {
+  padding: 3rem;
+  box-shadow: 0 0 15px 0 lightgray;
+  border-radius: 1rem;
 }
