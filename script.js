@@ -6,7 +6,14 @@ inputElement.addEventListener("input", event => {
   let value = inputElement.value;
   value = value.toString();
 
-  if (
+  if (value === "10") {
+    value = parseInt(value, 10);
+    value = value.toString(2);
+
+    valueBin = parseInt(value, 2);
+
+    labelElement.innerHTML = valueBin + " dec " + value + " bin";
+  } else if (
     value.includes("2") ||
     value.includes("3") ||
     value.includes("4") ||
